@@ -1,9 +1,9 @@
 to:
   image: schmunk42/nginx-redirect
   ports:
-    - "8888:80"
+    - "80:80"
   environment:
-    - SERVER_REDIRECT=www.example.com
+    - SERVER_REDIRECT=staging.52walker.com
     # optionally define path to redirect all requests
     # if not set nginx var $request_uri is used
     #- SERVER_REDIRECT_PATH=/landingpage
